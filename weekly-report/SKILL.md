@@ -7,8 +7,6 @@ description: Use when the user wants to review the project progress and render i
 
 Maintain one accumulating deck, `weekly-report/weekly-report.pptx`: each week's slides are built from `template/` and prepended, so the newest week is on top and past weeks stay below for recap.
 
-All commands run from the repo root with `uv run python`.
-
 ## Workflow
 
 1. **Gather content**: completed tasks, in-progress work, results and figures, blockers, plans. Figures must be image files on disk; render data to PNG first if needed. Use last week's slides in the deck to write the recap.
@@ -51,7 +49,7 @@ All commands run from the repo root with `uv run python`.
 4. **Preview**: build to the scratchpad, render to PDF, and inspect every page yourself (text overflow, image fit, leftover placeholders) before showing the user. Iterate on the manifest here.
 
     ```bash
-    uv run python weekly-report/scripts/build.py build <manifest.json> -o <scratchpad>/preview.pptx --fresh
+    uvsk scripts/build.py build <manifest.json> -o <scratchpad>/preview.pptx --fresh
 
     soffice --headless --convert-to pdf <scratchpad>/preview.pptx --outdir <scratchpad>
     ```
@@ -59,7 +57,7 @@ All commands run from the repo root with `uv run python`.
 5. **Finalize**: once approved, build into the deck (prepends; creates the file if absent), then push.
 
     ```bash
-    uv run python weekly-report/scripts/build.py build <manifest.json>
+    uvsk scripts/build.py build <manifest.json>
     ```
 
    Run this once per week: rerunning prepends a duplicate. `--fresh` discards all history; only on explicit request.
@@ -69,9 +67,9 @@ All commands run from the repo root with `uv run python`.
 One-time setup: OAuth client JSON at `~/.config/gdrive/credentials.json` (see `references/gcp-setup.md`); first run opens a browser for consent. The linked presentation id lives in `weekly-report/weekly-report.gslides.json`.
 
 ```bash
-uv run python weekly-report/scripts/gslides.py push   # create/update the presentation, print URL
+uvsk scripts/gslides.py push   # create/update the presentation, print URL
 
-uv run python weekly-report/scripts/gslides.py pull   # overwrite local pptx with the online version
+uvsk scripts/gslides.py pull   # overwrite local pptx with the online version
 ```
 
 Push replaces the whole presentation with the local file, so pull first if the user edited the deck online.

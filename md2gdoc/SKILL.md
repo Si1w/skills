@@ -14,11 +14,11 @@ Sync one Markdown file with one Google Doc, both directions, via pandoc docx con
 
 ## Workflow
 
-Run from the repo root so `uv` picks up `pyproject.toml`. First run opens a browser for one-time consent.
+First run opens a browser for one-time consent.
 
-- Push (create on first run, update the same Doc after): `uv run python md2gdoc/scripts/md2gdoc.py push <file.md>`
+- Push (create on first run, update the same Doc after): `uvsk scripts/md2gdoc.py push <file.md>`
 - Push with citations: add `--bib refs.bib` (and optionally `--csl style.csl`) to render `[@key]` citations via `--citeproc`.
-- Pull (export the Doc back, frontmatter kept): `uv run python md2gdoc/scripts/md2gdoc.py pull <file.md>`
+- Pull (export the Doc back, frontmatter kept): `uvsk scripts/md2gdoc.py pull <file.md>`
 
 On push, horizontal rules (`---`) are stripped and images are embedded without rendering their alt text as a caption.
 

@@ -13,11 +13,11 @@ Covers any directed-graph diagram: flowchart, decision flow, architecture, tree.
 
 1. Settle the graph with the user: nodes, edges, direction, formality.
 2. Write a graph JSON file (schema below).
-3. Build: `uv run python <skill>/scripts/build.py graph.json -o out.excalidraw`
-4. Export PNG: `node <skill>/scripts/export_png.mjs out.excalidraw out.png [scale]`
+3. Build: `uvsk scripts/build.py graph.json -o out.excalidraw`
+4. Export PNG: `node scripts/export_png.mjs out.excalidraw out.png [scale]`
 5. Report both file paths.
 
-`<skill>` is this skill's directory. Run from the repo root so `uv` picks up `pyproject.toml`. `build.py` is standard-library only; the PNG step needs puppeteer (`npm install -g puppeteer`, once).
+`build.py` is standard-library only; the PNG step needs puppeteer (`npm install -g puppeteer`, once).
 
 ## Graph JSON
 
