@@ -23,7 +23,7 @@ A collection of Agent skills for software engineering research and development w
 
 | Skill | Description |
 |-------|-------------|
-| [weekly-report](weekly-report/) | Build the weekly report deck from a pptx template and sync it with Google Slides |
+| [weekly-report](weekly-report/) | Compose and present the weekly report slides with Slidev |
 
 ### Documents
 
