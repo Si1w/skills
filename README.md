@@ -11,7 +11,12 @@ A collection of Agent skills for software engineering research and development w
 | [ese-review](ese-review/) | Review a paper against ACM/SIGSOFT Empirical Standards |
 | [mh-writing](mh-writing/) | Write and improve SE research papers paragraph by paragraph (Mark Harman's guidelines) |
 | [grill-me](grill-me/) | Adversarially grill a paper or document to expose weaknesses |
-| [excalidraw-diagram](excalidraw-diagram/) | Generate flowcharts and architecture diagrams as .excalidraw + PNG, with SVG icon support |
+
+### Development
+
+| Skill | Description |
+|-------|-------------|
+| [improve-code-arch](improve-code-arch/) | Scan a codebase for module-deepening opportunities, pick one, then grill through the refactor decisions |
 
 ### Git Workflow
 
