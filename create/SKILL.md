@@ -157,4 +157,4 @@ explicit = true
 | deepspeed | 0.18.9 | |
 | flash-attn | 2.8.3 | https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiFALSE-cp312-cp312-linux_x86_64.whl |
 | liger-kernel | 0.8.2 | |
-| vllm | 0.11.0 | Last release pinned to torch 2.8.0; requires transformers>=4.55.2, pulls xformers 0.0.32.post1 |
+| vllm | 0.11.0 | |
