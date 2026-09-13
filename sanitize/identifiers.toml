@@ -1,0 +1,42 @@
+# Personal identifier list for the sanitize skill.
+# Fill in the user's own identifiers. Matching is case-insensitive.
+
+[remove]
+# Files and directories deleted from the copy. Glob patterns, matched against
+# every path relative to the repository root.
+paths = [
+  "CLAUDE.md",
+  "AGENTS.md",
+  ".claude",
+  ".cursorrules",
+  ".cursor",
+  ".env",
+  ".env.*",
+  ".idea",
+  ".vscode",
+  ".DS_Store",
+  "*.log",
+  "slurm-*.out",
+]
+
+[identity]
+# Every literal below is replaced by the placeholder of its category.
+names = ["Firstname Lastname", "F. Lastname"]
+emails = ["me@university.ac.uk", "me@gmail.com"]
+usernames = ["mygithub", "k12345678"]
+institutions = ["King's College London", "KCL"]
+people = ["Supervisor Name"]
+# Own repositories, prior papers, personal sites.
+urls = ["github.com/mygithub", "doi.org/10.1145/0000000", "arxiv.org/abs/0000.00000"]
+
+[paths]
+# Absolute prefixes rewritten to "." so /users/k12345678/proj/data -> ./proj/data
+prefixes = ["/users/k12345678", "/scratch/users/k12345678", "/Users/k12345678"]
+
+[placeholders]
+names = "ANONYMIZED"
+emails = "anonymous@example.com"
+usernames = "anonymous"
+institutions = "ANONYMIZED"
+people = "ANONYMIZED"
+urls = "URL-REMOVED"
