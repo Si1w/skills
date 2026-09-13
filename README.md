@@ -4,51 +4,17 @@ A collection of Agent skills for software engineering research and development w
 
 ## Skills
 
-### Research
-
 | Skill | Description |
 |-------|-------------|
-| [ese-review](ese-review/) | Review a paper against ACM/SIGSOFT Empirical Standards |
-| [mh-writing](mh-writing/) | Write and improve SE research papers paragraph by paragraph (Mark Harman's guidelines) |
-| [grill-me](grill-me/) | Adversarially grill a paper or document to expose weaknesses |
-
-### Development
-
-| Skill | Description |
-|-------|-------------|
+| [commit](commit/) | Create git commits following the Conventional Commits format with a review-then-stage procedure |
+| [create](create/) | Guidelines for the KCL CREATE HPC cluster: login, partitions, Slurm jobs, storage, cache, and pinned library versions |
 | [improve-code-arch](improve-code-arch/) | Scan a codebase for module-deepening opportunities, pick one, then grill through the refactor decisions |
-
-### Git Workflow
-
-| Skill | Description |
-|-------|-------------|
-| [git-push](git-push/) | Push current branch to remote |
-
-### Reporting
-
-| Skill | Description |
-|-------|-------------|
 | [weekly-report](weekly-report/) | Compose and present the weekly report slides with Slidev |
-
-### Documents
-
-| Skill | Description |
-|-------|-------------|
-| [md2gdoc](md2gdoc/) | Sync a local Markdown file with a Google Doc, both directions |
-
-## References
-
-- [obra/superpowers](https://github.com/obra/superpowers) — The original skill collection that several skills in this repo were adapted from.
-- [Draft Guidelines for My Students on Writing Software Engineering Research Papers](https://cragkhit.github.io/files/harman-writing-advice.pdf) — Mark Harman's writing guidelines, used as the basis for the [mh-writing](mh-writing/) skill.
 
 ## Setup
 
-```bash
-uv sync  # install Python dependencies
-```
-
-Script commands in the skills use the `uvsk` alias:
+Symlink or copy this directory to `~/.claude/skills/` so the skills are discovered by Claude Code.
 
 ```bash
-alias uvsk='uv run --project <path-to-this-repo>'
+ln -sfn "$(pwd)" ~/.claude/skills
 ```
