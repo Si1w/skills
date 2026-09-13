@@ -1,6 +1,6 @@
 ---
 name: create
-description: Use when writing sbatch/srun scripts, setting up Python environments, transferring data, or managing Slurm jobs on the KCL CREATE HPC cluster.
+description: Use when working on the High Performance Computing (HPC) cluster CREATE.
 ---
 
 ## Login
