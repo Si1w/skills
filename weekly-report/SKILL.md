@@ -9,11 +9,12 @@ The deck lives in `~/Desktop/weekly-report`, a Slidev project. Each week is one 
 
 ## Commands
 
+`slidev` is installed globally (`npm i -g @slidev/cli`); the project's `node_modules/` must exist for the local addon and theme (run `npm install` once if missing). Replace `<date>` with the week folder name; the latest week is the last entry of `ls week | sort`.
+
 ```bash
 cd ~/Desktop/weekly-report
-./show                  # present the latest week
-./show 2026-08-05       # present a specific week
-./show --export [date]  # export a week to PDF (into its week folder)
+slidev week/<date>/<date>.md --open                                   # present a week
+slidev export week/<date>/<date>.md --output week/<date>/<date>.pdf   # export to PDF (into its week folder)
 ```
 
 ## Writing a new week
@@ -39,4 +40,4 @@ cd ~/Desktop/weekly-report
 
    Include only slides with real content; never leave template placeholder text.
 
-4. **Preview**: `./show --export <date>`, then inspect every PDF page yourself (text overflow, image fit, leftover placeholders) before showing the user. Delete the preview PDF afterwards unless the user wants it.
+4. **Preview**: run the export command above, then inspect every PDF page yourself (text overflow, image fit, leftover placeholders) before showing the user. Delete the preview PDF afterwards unless the user wants it.
