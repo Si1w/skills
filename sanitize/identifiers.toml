@@ -8,6 +8,7 @@ paths = [
   "CLAUDE.md",
   "AGENTS.md",
   ".claude",
+  ".agents",
   ".cursorrules",
   ".cursor",
   ".env",
