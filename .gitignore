@@ -1,4 +1,5 @@
 .DS_Store
 .system/
+synced/
 __pycache__/
 *.pyc

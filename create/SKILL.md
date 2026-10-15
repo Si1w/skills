@@ -16,3 +16,5 @@ Read the reference for the requested operation:
 Recorded hardware, limits, and package versions are snapshots. Use live scheduler output and the project's lockfile for current decisions. Keep training and other substantial computation on allocated compute nodes. `/scratch` is not backed up, and RDS data must be staged there before compute jobs use it.
 
 For job preparation, produce a runnable script with the requested resources and entrypoint. When execution is requested, submit within the agreed budget, report the job ID and observed state, and diagnose submission failures. A queued job is not a completed experiment; monitor to the endpoint the user requested.
+
+You are allowed to use `sbatch` and `srun` commands to submit scripts. But please do not easily run `rm -rf` or `kill -9` on the cluster.
