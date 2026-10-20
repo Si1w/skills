@@ -19,7 +19,7 @@ Arrange claims by their explanatory dependencies. When results challenge the exp
 
 Make figures and captions communicate the empirical findings. Use prose to explain the problem, experimental choices, and warranted conclusions. Assess whether each narrative remains understandable on its own at the requested scope.
 
-For figure design, panel arrangement, or a teaser figure, read [figures.md](references/figures.md). It includes optional Python examples; ordinary prose edits do not need them.
+For figure design, panel arrangement, or a teaser figure, read [figures.md](references/figures.md). It includes optional Python examples; ordinary prose edits do not need them. For method overviews and pipeline diagrams, [icons.md](references/icons.md) indexes reusable SVG icons in `assets/icons/`.
 
 ## Completion
 

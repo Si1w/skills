@@ -31,4 +31,6 @@ Browse the bundled [gallery](../assets/examples/gallery.png), then inspect the m
 
 Replace the synthetic arrays and generic labels with the project's measured data and definitions. Compute uncertainty from the actual sampling procedure and describe it in the caption; do not carry over the demonstration error bars. Preserve inconvenient observations and report selection criteria for any omitted results.
 
+For method overviews and pipeline diagrams, reuse the icons listed in [icons.md](icons.md) (frozen and trainable markers, operators, module blocks, data sources, arrows) so that notation stays consistent across figures.
+
 Check the figure at its intended publication size. Confirm units, axis limits, labels, uncertainty, and text agree with the analysis. Use direct labels, marker shapes, or patterns where color alone would make conditions difficult to distinguish. Palette and typography should follow the paper's existing design when there is one.
