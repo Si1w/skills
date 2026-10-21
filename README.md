@@ -12,4 +12,5 @@ A collection of Agent skills for software engineering research and development w
 | [paper-storytelling](paper-storytelling/) | Develop empirical paper arguments and figure narratives, with runnable Python figure references and reusable SVG diagram icons |
 | [es-review](es-review/) | Review empirical SE papers against ACM SIGSOFT standards with evidence-linked findings and actionable revisions |
 | [sanitize](sanitize/) | Copy a repository, strip identifying content, and verify it for double-blind artifact submission |
+| [simplify-docs](simplify-docs/) | Simplify existing documentation and agent instructions while preserving meaning and operational constraints |
 | [weekly-report](weekly-report/) | Compose and present the weekly report slides with Slidev |
