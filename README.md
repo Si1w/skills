@@ -6,7 +6,7 @@ A collection of Agent skills for software engineering research and development w
 
 | Skill | Description |
 |-------|-------------|
-| [climb](climb/) | Map project files and their relationships for comprehensive project exploration or task-focused file discovery |
+| [climb](climb/) | Search arXiv, alphaXiv, and other scholarly sources for papers relevant to the current project |
 | [commit](commit/) | Create git commits following the Conventional Commits format with a review-then-stage procedure |
 | [create](create/) | Run and troubleshoot KCL CREATE jobs, with references for Slurm, storage, and project environments |
 | [experiment-design](experiment-design/) | Design empirical SE studies using ACM/SIGSOFT standards, record ADRs, and map agreed decisions to project code |
