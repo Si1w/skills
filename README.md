@@ -9,6 +9,7 @@ A collection of Agent skills for software engineering research and development w
 | [climb](climb/) | Search arXiv, alphaXiv, and other scholarly sources for papers relevant to the current project |
 | [commit](commit/) | Create git commits following the Conventional Commits format with a review-then-stage procedure |
 | [create](create/) | Run and troubleshoot KCL CREATE jobs, with references for Slurm, storage, and project environments |
+| [isambard](isambard/) | Set up and troubleshoot Isambard-AI access through AIRR, Clifton certificates, and SSH |
 | [experiment-design](experiment-design/) | Design empirical SE studies using ACM/SIGSOFT standards, record ADRs, and map agreed decisions to project code |
 | [paper-storytelling](paper-storytelling/) | Develop empirical paper arguments and figure narratives, with runnable Python figure references and reusable SVG diagram icons |
 | [es-review](es-review/) | Review empirical SE papers against ACM SIGSOFT standards with evidence-linked findings and actionable revisions |
